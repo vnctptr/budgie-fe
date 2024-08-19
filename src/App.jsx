@@ -3,7 +3,8 @@
 // import viteLogo from "/vite.svg";
 import "./App.css";
 import Login from "./pages/Login/Login.jsx";
-import { BrowserRouter, Route } from "react-router-dom";
+import Home from "./pages/Home/Home.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -11,9 +12,10 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Route exact path="/" component={Login} />
-        <Route path="/login" component={Login} />
-        <Login />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
       </BrowserRouter>
     </>
   );
