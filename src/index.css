@@ -10,7 +10,6 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,7 +27,7 @@ a:hover {
 
 body {
   margin: 0;
-  place-items: center;
+  place-items: baseline;
   min-width: 320px;
   min-height: 100vh;
 }
