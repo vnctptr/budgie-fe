@@ -1,15 +1,14 @@
 import Sidebar from "../../components/Sidebar/Sidebar.jsx";
+import Content from "../../components/Content/Content.jsx";
 
 const Home = () => {
   return (
     <>
       <div className="flex">
         <Sidebar />
-        <div className="w-full flex flex-col h-dvh">
-          <div className="w-full h-56">
-            <h4 className="font-bold m-5">Nov 2024</h4>
-          </div>
-          <div className="p-2 overflow-y-auto">
+        <Content
+          header={<h4 className="font-bold m-5">Nov 2024</h4>}
+          body={
             <ul>
               <li>Groceries: $150</li>
               <li>Dining Out: $120</li>
@@ -72,8 +71,8 @@ const Home = () => {
               <li>Books: $30</li>
               <li>Cooking Utensils: $30</li>
             </ul>
-          </div>
-        </div>
+          }
+        />
       </div>
     </>
   );
